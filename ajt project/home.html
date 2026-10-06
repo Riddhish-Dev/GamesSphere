@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSphere - Choose Your Game</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <!-- BACKGROUND GRAPHICS OVERLAY -->
+    <div class="bg-effects">
+        <div class="bg-glow spot-1"></div>
+        <div class="bg-glow spot-2"></div>
+        <div class="bg-grid-pattern"></div>
+    </div>
+
+    <div class="app-container">
+        
+        <!-- TOP NAVIGATION HEADER -->
+        <header class="top-nav">
+            <div class="nav-left">
+                <a href="home.html" class="nav-logo">
+                    <div class="logo-icon-sm">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <span class="nav-title">GAMESPHERE</span>
+                </a>
+            </div>
+
+            <nav class="nav-center">
+                <a href="home.html" class="nav-link active">Home</a>
+                <a href="#games" class="nav-link">Games</a>
+                <a href="#leaderboard" class="nav-link">Leaderboard</a>
+                <a href="#profile" class="nav-link">Profile</a>
+            </nav>
+
+            <div class="nav-right">
+                <div class="user-profile-badge">
+                    <div class="avatar-circle">P</div>
+                    <div class="user-info">
+                        <span class="user-name">Player</span>
+                        <span class="user-status"><span class="status-dot"></span> Online</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN HERO SECTION -->
+        <section class="hub-hero">
+            <div class="hero-text-content">
+                <span class="welcome-tag">Welcome back, Player</span>
+                <h1 class="hub-heading">Choose Your Game</h1>
+                <p class="hub-subtext">Pick a game and start playing.</p>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT: 5 GAME CARDS GRID -->
+        <main class="hub-content" id="games">
+            <div class="games-grid">
+
+                <!-- GAME CARD 1: CHESS -->
+                <article class="game-card">
+                    <div class="card-icon-area">
+                        <div class="card-icon-circle chess-glow">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 20H5a2 2 0 0 1-2-2v-1c0-2 2-3 4-3h10c2 0 4 1 4 3v1a2 2 0 0 1-2 2z"></path>
+                                <path d="M16 14a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2"></path>
+                                <path d="M14 10a2 2 0 0 0-2-2H8l-1-2h4l1-2 3 2v4z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="game-title">CHESS</h2>
+                        <span class="game-subtitle">Classic Strategy</span>
+                        <p class="game-desc">Master the board and outplay your opponent.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-primary play-btn">
+                            <span>PLAY</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- GAME CARD 2: TIC-TAC-TOE -->
+                <article class="game-card">
+                    <div class="card-icon-area">
+                        <div class="card-icon-circle tictactoe-glow">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="9" y1="3" x2="9" y2="21"></line>
+                                <line x1="15" y1="3" x2="15" y2="21"></line>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="3" y1="15" x2="21" y2="15"></line>
+                                <path d="M4 4l4 4m0-4L4 8" stroke="#6366f1" stroke-width="2.5"></path>
+                                <circle cx="19" cy="19" r="2.5" stroke="#ec4899" stroke-width="2.5"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="game-title">TIC-TAC-TOE</h2>
+                        <span class="game-subtitle">Classic X vs O</span>
+                        <p class="game-desc">Challenge your opponent in the classic strategy game.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-primary play-btn">
+                            <span>PLAY</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- GAME CARD 3: MEMORY GAME -->
+                <article class="game-card">
+                    <div class="card-icon-area">
+                        <div class="card-icon-circle memory-glow">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="8" height="10" rx="1.5"></rect>
+                                <rect x="13" y="11" width="8" height="10" rx="1.5"></rect>
+                                <path d="M15 5h4a2 2 0 0 1 2 2v2"></path>
+                                <path d="M9 19H5a2 2 0 0 1-2-2v-2"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="game-title">MEMORY GAME</h2>
+                        <span class="game-subtitle">Test Your Memory</span>
+                        <p class="game-desc">Match the cards and complete the board.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-primary play-btn">
+                            <span>PLAY</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- GAME CARD 4: BATTLESHIP -->
+                <article class="game-card">
+                    <div class="card-icon-area">
+                        <div class="card-icon-circle battleship-glow">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="3" x2="12" y2="21"></line>
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <circle cx="15" cy="9" r="1" fill="currentColor"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="game-title">BATTLESHIP</h2>
+                        <span class="game-subtitle">Sink the Fleet</span>
+                        <p class="game-desc">Find and destroy your opponent's hidden fleet.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-primary play-btn">
+                            <span>PLAY</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- GAME CARD 5: SNAKE & LADDERS -->
+                <article class="game-card">
+                    <div class="card-icon-area">
+                        <div class="card-icon-circle snakeladder-glow">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+                                <circle cx="9" cy="9" r="1.5" fill="currentColor"></circle>
+                                <circle cx="15" cy="15" r="1.5" fill="currentColor"></circle>
+                                <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="game-title">SNAKE & LADDERS</h2>
+                        <span class="game-subtitle">Roll. Climb. Win.</span>
+                        <p class="game-desc">Race to the finish while avoiding the snakes.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-primary play-btn">
+                            <span>PLAY</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
